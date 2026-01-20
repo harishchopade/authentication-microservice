@@ -1,0 +1,20 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: authentication
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/auth_db
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: my-secret-key-which-is-very-long-and-difficult
+  expiration: 900000
